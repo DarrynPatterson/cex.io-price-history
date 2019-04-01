@@ -1,0 +1,29 @@
+{
+  "name": "cex.io-price-history",
+  "version": "1.0.0",
+  "description": "NodeJs API which returns all CEX.IO price history and displays it in a ReactJs chart.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarrynPatterson/cex.io-price-history.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarrynPatterson/cex.io-price-history/issues"
+  },
+  "homepage": "https://github.com/DarrynPatterson/cex.io-price-history#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "proxy": "http://localhost:5000/",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
