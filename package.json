@@ -1,7 +1,7 @@
 {
   "name": "cex.io-price-history",
   "version": "1.0.0",
-  "description": "NodeJs API which returns all CEX.IO price history and displays it in a ReactJs chart.",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/DarrynPatterson/cex.io-price-history#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "cexio-api-node": "^1.2.0",
+    "express": "^4.16.4",
+    "moment": "^2.24.0"
   },
   "proxy": "http://localhost:5000/",
   "devDependencies": {
