@@ -10,13 +10,12 @@ class App extends Component {
       cexTickerData: {},
       cexHistory: [],
       symbol: "BTC/USD",
-      start: "20180701"
+      start: "20190101"
     };
   }
 
   componentDidMount() {
-    const symbol = this.state.symbol;
-    fetch("/api/ticker?symbol=" + symbol)
+    fetch(`/api/ticker?symbol=${this.state.symbol}`)
       .then(response => response.json())
       .then(data => {
         this.setState({ cexTickerData: data });
@@ -33,7 +32,29 @@ class App extends Component {
           <h1 className="App-title">
             {this.state.symbol} Price = {this.state.cexTickerData.last}
           </h1>
-          <p />
+          <p>
+            <button
+              className="button is-medium is-link"
+              onClick={() => {
+                fetch(
+                  "/api/historical?symbol=" +
+                    this.state.symbol +
+                    "&start=" +
+                    this.state.start
+                )
+                  .then(response => response.json())
+                  .then(data => {
+                    console.log(data);
+                    this.setState({ cexHistory: data });
+                  })
+                  .catch(error => () => {
+                    console.log("Cex history fetch error");
+                  });
+              }}
+            >
+              <strong className="has-text-weight-semibold">Create Chart</strong>
+            </button>
+          </p>
         </header>
       </div>
     );

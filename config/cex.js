@@ -1,5 +1,5 @@
 module.exports = {
-  ClientId: "",
-  ApiKey: "",
-  ApiSecret: ""
+  ClientId: "<Your Value>",
+  ApiKey: "<Your Value>",
+  ApiSecret: "<Your Value>"
 };
