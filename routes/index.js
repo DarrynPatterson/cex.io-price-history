@@ -20,14 +20,12 @@ router.get("/api/ticker", (req, res) => {
 });
 
 router.get("/api/historical", (req, res) => {
-  debugger;
   const q = req.query;
   const symbol = q.symbol;
   const startDate = q.start;
   console.log(q);
 
   getCexPrices_DailyAll(symbol, startDate, data => {
-    debugger;
     res.send(data);
   });
 });
