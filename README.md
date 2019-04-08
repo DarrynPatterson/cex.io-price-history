@@ -19,11 +19,3 @@ npm run dev
 ```bash
 npm run start
 ```
-
-## Open the cex.js config file and enter your own CEX.IO ClientId, ApiKey and ApiSecret
-
-module.exports = {
-ClientId: "",
-ApiKey: "",
-ApiSecret: ""
-};
