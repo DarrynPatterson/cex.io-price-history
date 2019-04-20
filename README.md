@@ -1,21 +1,24 @@
 # cex.io-price-history
 
-Dev environment
+> Retrieves all CEX.IO price history for the BTC/USD ticker.
 
-## Install Dependencies (for both client & server)
+## Features
 
-```bash
+🙌 Retrieves *all* ticker history (not just the default 100 record limit).
+
+## Dev
+
+### Install
+
+```
 npm install
+npm install client-install
 ```
 
-## Run Dev Server
+### Run
 
-```bash
+```sh
 npm run dev
 ```
 
-## Run Dev Client (navigate to the Client folder)
-
-```bash
-npm run start
-```
+⭐ Concurrently starts the server and client.
