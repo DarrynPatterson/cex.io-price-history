@@ -6,7 +6,7 @@
 
 🙌 Retrieves *all* ticker history (not just the default 100 record limit).
 
-## Dev
+## Dev Install
 
 ### Install
 
